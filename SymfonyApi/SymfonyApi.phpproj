@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>SymfonyApi</Name>
+    <ProjectGuid>f79aa3ca-af37-4797-a250-e9e8a6c1cceb</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.</OutputPath>
+    <RootNamespace>SymfonyApi</RootNamespace>
+    <ProjectTypeGuids>{73520F3B-57D4-4D7D-8280-D81F0A3C992B};{349C5851-65DF-11DA-9384-00065B846F21};{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\AppCache.php" />
+    <Compile Include="app\AppKernel.php" />
+    <Compile Include="app\autoload.php" />
+    <Compile Include="app\check.php" />
+    <Compile Include="app\SymfonyRequirements.php" />
+    <Compile Include="index.php" />
+    <Compile Include="src\Acme\ApiBundle\AcmeApiBundle.php" />
+    <Compile Include="src\Acme\ApiBundle\Command\HelloWorldCommand.php" />
+    <Compile Include="src\Acme\ApiBundle\Controller\DemoController.php" />
+    <Compile Include="src\Acme\ApiBundle\Controller\SecuredController.php" />
+    <Compile Include="src\Acme\ApiBundle\Controller\WelcomeController.php" />
+    <Compile Include="src\Acme\ApiBundle\DependencyInjection\AcmeDemoExtension.php" />
+    <Compile Include="src\Acme\ApiBundle\Entity\AccessToken.php" />
+    <Compile Include="src\Acme\ApiBundle\Entity\AuthCode.php" />
+    <Compile Include="src\Acme\ApiBundle\Entity\Client.php" />
+    <Compile Include="src\Acme\ApiBundle\Entity\RefreshToken.php" />
+    <Compile Include="src\Acme\ApiBundle\Entity\User.php" />
+    <Compile Include="src\Acme\ApiBundle\EventListener\ControllerListener.php" />
+    <Compile Include="src\Acme\ApiBundle\Form\ContactType.php" />
+    <Compile Include="src\Acme\ApiBundle\Tests\Controller\DemoControllerTest.php" />
+    <Compile Include="src\Acme\ApiBundle\Twig\Extension\DemoExtension.php" />
+    <Compile Include="src\AppBundle\AppBundle.php" />
+    <Compile Include="src\AppBundle\Controller\DefaultController.php" />
+    <Compile Include="src\AppBundle\Tests\Controller\DefaultControllerTest.php" />
+    <Compile Include="web\app.php" />
+    <Compile Include="web\app_dev.php" />
+    <Compile Include="web\config.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\cache\" />
+    <Folder Include="app\config\" />
+    <Folder Include="app\logs\" />
+    <Folder Include="app\Resources\" />
+    <Folder Include="app\Resources\views\" />
+    <Folder Include="app\Resources\views\default\" />
+    <Folder Include="Properties\" />
+    <Folder Include="src\" />
+    <Folder Include="src\Acme\" />
+    <Folder Include="src\Acme\ApiBundle\" />
+    <Folder Include="src\Acme\ApiBundle\Command\" />
+    <Folder Include="src\Acme\ApiBundle\Controller\" />
+    <Folder Include="src\Acme\ApiBundle\DependencyInjection\" />
+    <Folder Include="src\Acme\ApiBundle\EventListener\" />
+    <Folder Include="src\Acme\ApiBundle\Form\" />
+    <Folder Include="src\Acme\ApiBundle\Entity\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\config\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\public\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\public\css\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\public\images\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\views\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\views\Demo\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\views\Secured\" />
+    <Folder Include="src\Acme\ApiBundle\Resources\views\Welcome\" />
+    <Folder Include="src\Acme\ApiBundle\Tests\" />
+    <Folder Include="src\Acme\ApiBundle\Tests\Controller\" />
+    <Folder Include="src\Acme\ApiBundle\Twig\" />
+    <Folder Include="src\Acme\ApiBundle\Twig\Extension\" />
+    <Folder Include="src\AppBundle\" />
+    <Folder Include="src\AppBundle\Controller\" />
+    <Folder Include="src\AppBundle\Tests\" />
+    <Folder Include="src\AppBundle\Tests\Controller\" />
+    <Folder Include="web\" />
+    <Folder Include="web\bundles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\.htaccess" />
+    <Content Include="app\bootstrap.php.cache" />
+    <Content Include="app\cache\.gitkeep" />
+    <Content Include="app\config\config.yml" />
+    <Content Include="app\config\config_dev.yml" />
+    <Content Include="app\config\config_prod.yml" />
+    <Content Include="app\config\config_test.yml" />
+    <Content Include="app\config\parameters.yml" />
+    <Content Include="app\config\parameters.yml.dist" />
+    <Content Include="app\config\routing.yml" />
+    <Content Include="app\config\routing_dev.yml" />
+    <Content Include="app\config\security.yml" />
+    <Content Include="app\config\services.yml" />
+    <Content Include="app\console" />
+    <Content Include="app\logs\.gitkeep" />
+    <Content Include="app\phpunit.xml.dist" />
+    <Content Include="app\Resources\views\base.html.twig" />
+    <Content Include="app\Resources\views\default\index.html.twig" />
+    <Content Include="composer.json" />
+    <Content Include="src\.htaccess" />
+    <Content Include="src\Acme\ApiBundle\Resources\config\routing.yml" />
+    <Content Include="src\Acme\ApiBundle\Resources\config\services.xml" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\css\demo.css" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\blue-arrow.png" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\field-background.gif" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\logo.gif" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\search.png" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\welcome-configure.gif" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\welcome-demo.gif" />
+    <Content Include="src\Acme\ApiBundle\Resources\public\images\welcome-quick-tour.gif" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Demo\contact.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Demo\hello.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Demo\index.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\layout.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Secured\hello.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Secured\helloadmin.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Secured\layout.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Secured\login.html.twig" />
+    <Content Include="src\Acme\ApiBundle\Resources\views\Welcome\index.html.twig" />
+    <Content Include="web\.htaccess" />
+    <Content Include="web\apple-touch-icon.png" />
+    <Content Include="web\bundles\acmedemo" />
+    <Content Include="web\bundles\framework" />
+    <Content Include="web\bundles\sensiodistribution" />
+    <Content Include="web\favicon.ico" />
+    <Content Include="web\robots.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
